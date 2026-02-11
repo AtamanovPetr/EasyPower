@@ -584,6 +584,9 @@ body {
   .slider-buttons {
     display: flex;
   }
+  .human-body {
+    zoom: 0.6;
+  }
 }
 
 @media (max-width: 992px) {
@@ -724,6 +727,9 @@ body {
   .close-menu .mobile-menu-line:nth-child(3) {
     transform: rotate(-45deg) translateY(-9px);
   }
+  .human-body {
+    zoom: 0.5;
+  }
 }
 
 @media (max-width: 768px) {
@@ -731,11 +737,15 @@ body {
     max-width: 40rem;
     padding-right: 14px;
   }
-  .header-title {
+  .header-title,
+  .human-title {
     font-size: 4rem;
   }
   .header-content {
     padding-top: 3rem;
+  }
+  .human-body {
+    zoom: 0.4;
   }
 }
 
@@ -787,5 +797,8 @@ body {
   .section-title {
     margin-bottom: 3.2rem;
     font-size: 35px;
+  }
+  .human-body {
+    zoom: 0.3;
   }
 }
