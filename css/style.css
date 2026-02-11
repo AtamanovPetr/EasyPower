@@ -754,6 +754,7 @@ body {
     padding-top: 4rem;
   }
   .header-title {
+    width: 74%;
     letter-spacing: 0.6px;
     margin-bottom: 0;
   }
