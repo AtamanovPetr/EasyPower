@@ -16,6 +16,10 @@ const lightModeOff = (event) => {
   logoLight.style.display = "block";
 };
 
+window.addEventListener("scroll", () => {
+  this.scrollY > 1 ? lightModeOn() : lightModeOff();
+});
+
 const openMenu = (event) => {
   //функция открывания меню
   menu.classList.add("is-open"); // вешает класс is-open
@@ -32,40 +36,9 @@ const closeMenu = (event) => {
   lightModeOff();
 };
 
-window.addEventListener("scroll", () => {
-  this.scrollY > 1 ? lightModeOn() : lightModeOff();
-});
-
 mMenuToggle.addEventListener("click", (event) => {
   event.preventDefault();
   menu.classList.contains("is-open") ? closeMenu() : openMenu();
-});
-
-const swiperSteps = new Swiper(".steps-slider", {
-  speed: 400,
-  watchSlidesVisibility: true,
-  slidesPerView: 1,
-  breakpoints: {
-    // when window width is >= 320px
-    576: {
-      slidesPerView: 2,
-      initialSlide: 4,
-    },
-    // when window width is >= 480px
-    768: {
-      slidesPerView: 3,
-      initialSlide: 4,
-    },
-    // when window width is >= 640px
-    1024: {
-      slidesPerView: 4,
-      initialSlide: 4,
-    },
-  },
-  navigation: {
-    nextEl: ".steps-button-next",
-    prevEl: ".steps-button-prev",
-  },
 });
 
 const swiper = new Swiper(".features-slider", {
@@ -96,36 +69,6 @@ const swiper = new Swiper(".features-slider", {
   navigation: {
     nextEl: ".slider-button-next",
     prevEl: ".slider-button-prev",
-  },
-});
-
-const swiperBlog = new Swiper(".blog-slider", {
-  speed: 400,
-  slidesPerView: 2,
-  spaceBetween: 30,
-  navigation: {
-    nextEl: ".blog-button-next",
-    prevEl: ".blog-button-prev",
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-    // when window width is >= 320px
-    576: {
-      slidesPerView: 1,
-    },
-    // when window width is >= 480px
-    768: {
-      slidesPerView: 2,
-    },
-    // when window width is >= 640px
-    1024: {
-      slidesPerView: 2,
-    },
-    1200: {
-      slidesPerView: 2,
-    },
   },
 });
 
