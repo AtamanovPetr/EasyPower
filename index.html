@@ -13,6 +13,7 @@
     />
 
     <!-- Стили -->
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -98,7 +99,10 @@
           >+7 (903) 764-53-39</a
         >
       </div>
-      <button class="navbar-button button" data-toggle="modal">
+      <button
+        class="navbar-button button wow animate__animated animate__fadeIn animate__slower"
+        data-toggle="modal"
+      >
         <svg class="button-icon" width="16" height="16">
           <use href="img/sprite.svg#phone"></use>
         </svg>
@@ -108,7 +112,9 @@
 
     <header class="header header-image">
       <div class="container">
-        <div class="header-content">
+        <div
+          class="header-content wow animate__animated animate__fadeIn animate__slower"
+        >
           <div class="seporator"></div>
           <h1 class="header-title">
             Создай тело мечты <br />
@@ -118,13 +124,17 @@
             Следуй инструкциям на сайте и ты изменишься до неузнаваемости
           </p>
           <a href="#start"
-            ><div class="header-content-button button">
+            ><div
+              class="header-content-button button wow animate__animated animate__fadeIn animate__slower"
+            >
               Начни прямо сейчас
             </div></a
           >
         </div>
 
-        <div class="swiper-container features-slider">
+        <div
+          class="swiper-container features-slider wow animate__animated animate__fadeIn animate__slower"
+        >
           <!-- Additional required wrapper -->
           <ul class="swiper-wrapper header-features">
             <!-- Slides -->
@@ -187,7 +197,9 @@
     <section class="human" id="start">
       <div class="container">
         <h1 class="human-title">Выбери мышцу</h1>
-        <div class="human-body">
+        <div
+          class="human-body wow animate__animated animate__fadeIn animate__slower"
+        >
           <svg
             id="head"
             width="80.3"
@@ -592,7 +604,9 @@
       <div class="container">
         <div class="seporator-muscle"></div>
         <h1 class="human-title">Бицепс</h1>
-        <div class="muscle-wrap">
+        <div
+          class="muscle-wrap wow animate__animated animate__fadeIn animate__slower wow animate__animated animate__fadeIn animate__slower"
+        >
           <video class="responsive-video" controls preload="metadata">
             <source src="img/biceps.mp4" type="video/mp4" />
           </video>
@@ -611,9 +625,11 @@
     <section class="muscle" id="shoulders">
       <div class="container">
         <h1 class="human-title">Плечи</h1>
-        <div class="muscle-wrap">
+        <div
+          class="muscle-wrap wow animate__animated animate__fadeIn animate__slower"
+        >
           <video class="responsive-video" controls preload="metadata">
-            <source src="img/biceps.mp4" type="video/mp4" />
+            <source src="img/shoulders.mp4" type="video/mp4" />
           </video>
           <p class="muscle-text">
             Плечи — это уникальный механизм, обеспечивающий самую высокую
@@ -630,7 +646,9 @@
     <section class="muscle" id="brest">
       <div class="container">
         <h1 class="human-title">Грудь</h1>
-        <div class="muscle-wrap">
+        <div
+          class="muscle-wrap wow animate__animated animate__fadeIn animate__slower"
+        >
           <video class="responsive-video" controls preload="metadata">
             <source src="img/biceps.mp4" type="video/mp4" />
           </video>
@@ -649,9 +667,11 @@
     <section class="muscle" id="abs">
       <div class="container">
         <h1 class="human-title">Пресс</h1>
-        <div class="muscle-wrap">
+        <div
+          class="muscle-wrap wow animate__animated animate__fadeIn animate__slower"
+        >
           <video class="responsive-video" controls preload="metadata">
-            <source src="img/biceps.mp4" type="video/mp4" />
+            <source src="img/abs.mp4" type="video/mp4" />
           </video>
           <p class="muscle-text">
             Пресс — это не просто эстетичные «кубики», а фундамент здоровья
@@ -670,9 +690,11 @@
     <section class="muscle" id="legs">
       <div class="container">
         <h1 class="human-title">Ноги</h1>
-        <div class="muscle-wrap">
+        <div
+          class="muscle-wrap wow animate__animated animate__fadeIn animate__slower"
+        >
           <video class="responsive-video" controls preload="metadata">
-            <source src="img/biceps.mp4" type="video/mp4" />
+            <source src="img/legs.mp4" type="video/mp4" />
           </video>
           <p class="muscle-text">
             Ноги — это наша главная опора и двигатель. Будучи самой мощной
@@ -749,6 +771,10 @@
     </div>
 
     <!-- Скрипты -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <script src="js/swiper-bundle.min.js"></script>
 
     <script src="js/main.js"></script>

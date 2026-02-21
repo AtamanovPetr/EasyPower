@@ -405,7 +405,7 @@ body {
   height: 100%;
   background-color: rgba(41, 45, 51, 0.5);
   display: flex;
-  transition: opacity 0.2s;
+  transition: opacity 0.4s;
 }
 
 .modal.is-open {
@@ -428,8 +428,8 @@ body {
   transform: translateY(-10%);
   opacity: 0;
   transition:
-    transform 0.3s,
-    opacity 0.2s;
+    transform 0.4s,
+    opacity 0.4s;
 }
 .modal-close {
   display: block;
