@@ -7,6 +7,11 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.js-loading * {
+  animation-play-state: paused !important;
+}
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
