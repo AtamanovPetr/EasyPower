@@ -4957,15 +4957,8 @@ body {
   z-index: 2;
 }
 .modal {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateX(-100%);
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(41, 45, 51, 0.5);
   display: flex;
   transition: opacity 0.4s;
 }
@@ -4991,25 +4984,16 @@ body {
     transform 0.4s,
     opacity 0.4s;
 }
-.modal-close {
-  display: block;
-  position: absolute;
-  top: 2.5rem;
-  right: 3.125rem;
-  width: 3.125rem;
-  height: 3.125rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--sep, rgba(235, 235, 240, 1));
-}
 .modal-title {
-  margin-top: 0;
-  margin-bottom: 1.25rem;
-  font-family: "Bebas Neue Book";
-  font-size: 3rem;
-  font-weight: 600;
+  width: 110%;
+  font-family: "Bebas Neue Book", sans-serif;
+  font-size: 5rem;
   line-height: 120%;
+  margin-top: 1.25rem;
+  margin-bottom: 1.875rem;
+  word-spacing: -3px;
+  letter-spacing: 1px;
+  text-align: center;
 }
 .modal-text {
   font-size: 1rem;
